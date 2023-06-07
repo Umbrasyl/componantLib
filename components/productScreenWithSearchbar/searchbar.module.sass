@@ -1,4 +1,7 @@
 @use "../../lib/_utils"
+
+$searchBar-bg: utils.$gray-700
+$searchBar-text: utils.$white-400
   
 .searchBar
   padding: 0.6rem 1.2rem
@@ -6,8 +9,8 @@
   font-size: 1.3rem
   border-radius: 12px 0 0 12px
   border: none
-  background-color: utils.$searchBar-bg
-  color: utils.$searchBar-text
+  background-color: $searchBar-bg
+  color: $searchBar-text
   width: 100%
   line-height: 1.3rem
   &:focus
@@ -16,7 +19,7 @@
 .submitButton
   height: 100%
   aspect-ratio: 1 / 1
-  background-color: utils.$searchBar-bg
+  background-color: $searchBar-bg
   border: none
   border-radius: 0 12px 12px 0
   position: relative
@@ -28,7 +31,7 @@
     transition: transform 0.1s ease-in-out
     filter: brightness(1.2)
   svg
-    fill: utils.$searchBar-text
+    fill: $searchBar-text
 
 .container
   width: clamp(15rem, 100%, 30rem)
