@@ -15,7 +15,7 @@ export default function ProductScreenWithSearch({ productsInput }) {
 
   return (
     <div className={styles.container}>
-      <SearchBar products={productsInput} handleProducts={setProducts}/>
+      <SearchBar fullList={productsInput} stateUpdater={setProducts}/>
       <ProductScreen products={products}/>
     </div>
   )

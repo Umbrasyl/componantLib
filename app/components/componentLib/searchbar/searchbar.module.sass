@@ -1,0 +1,42 @@
+$searchBar-bg: rgb(30, 30, 30)
+$searchBar-text: rgb(202, 202, 202)
+  
+.searchBar
+  padding: 0.6rem 1.2rem
+  padding-right: 0
+  font-size: 1.3rem
+  border-radius: 12px 0 0 12px
+  border: none
+  background-color: $searchBar-bg
+  color: $searchBar-text
+  width: 100%
+  line-height: 1.3rem
+  &:focus
+    outline: none
+
+.submitButton
+  height: 100%
+  aspect-ratio: 1 / 1
+  background-color: $searchBar-bg
+  border: none
+  border-radius: 0 12px 12px 0
+  position: relative
+  left: -1px
+  &:hover
+    cursor: pointer
+  &:active
+    transform: scale(0.95)
+    transition: transform 0.1s ease-in-out
+    filter: brightness(1.2)
+  svg
+    fill: $searchBar-text
+
+.container
+  width: clamp(15rem, 100%, 30rem)
+  margin: 0 auto
+
+.form
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center

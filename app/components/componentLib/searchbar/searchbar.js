@@ -1,12 +1,14 @@
 "use client"
 
 import styles from './searchbar.module.sass';
-import { useState } from "react";
+import { useState } from 'react';
 
 const magGlassWidth = 30;
 
-export default function SearchBar({ stateUpdater, fullList }) {
-  const [search, setSearch] = useState("");
+export default function SearchBar({ stateUpdater = () => {}, fullList = [] }) {
+  // const [search, setSearch] = useState("");
+  const search = "";
+  const setSearch = () => {};
   
   const handleInputChange = (event) => {
     setSearch(event.target.value);
