@@ -10,6 +10,7 @@ export default function ProductScreen({ products }) {
         return (
           <ProductCard
             key={product.id}
+            id={product.id}
             name={product.name}
             description={product.description}
             image={product.image}

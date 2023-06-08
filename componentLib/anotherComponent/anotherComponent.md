@@ -1,6 +1,6 @@
 ---
-id: component2
-name: Component 2
+id: anotherComponent
+name: Another Component
 description: This is my second component
 ---
 
